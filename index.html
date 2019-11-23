@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>URL Parser</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="principal">
+        <div class="url">
+            <input type="text" id="url_format" value="/:version/api/:collection/:id/" placeholder="/:version/api/:collection/:id/" onchange="generatePathObject()">
+        </div>
+        <div class="url">
+            <input type="text" id="url_instance" value="/6/api/listings/3?sort=desc&limit=10" placeholder="/6/api/listings/3?sort=desc&limit=10" onchange="generatePathObject()">
+        </div>
+    </div>
+    <div class="result">
+        <div id="summary"></div>
+        <div class="label">{</div>
+        <div id="object-output"></div>
+        <div class="label">}</div>
+    </div>
+</body>
+    <script src="./app.js"></script>
+</html>

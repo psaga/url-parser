@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0px;
+    font-family: Helvetica;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    min-height: 50%;
+}
+
+.principal > .url {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.url > input {
+    max-width: 70%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.25) !important;
+    height: 20px;
+    padding: 10px;
+    width: 600px;
+    font-size: 20px;
+}
+
+.result {
+    background-color: black;
+    height: auto;
+    min-height: 50%;
+    color:white;
+    font-family: monospace;
+}
+
+.result > #summary {
+    color: #288e28;
+    padding: 15px 0px 0px 20px;
+}
+
+.result > .label {
+    padding: 15px 20px;
+}
+
+.result > #object-output {
+    padding: 0px 40px;
+}
+
+.warning {
+    color:#ff0000;
+}
